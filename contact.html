@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontak Saya">
+    <meta name="theme-color" content="#0a3d2a">
+    <title>Kontak | RAFI HAIKAL PRATAMA</title>
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="rafilogo-192x192.png">
+    <link rel="apple-touch-icon" href="rafilogo-512x512.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="particles-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon">Porto</span>
+                    <span class="logo-text">Folio</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Tentang</span>
+                    </a></li>
+                    <li><a href="contact.html" class="nav-link active">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kontak</span>
+                    </a></li>
+                    <li id="installNavItem" style="display: none;">
+                        <button id="installButton" class="nav-install-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Install</span>
+                        </button>
+                    </li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Hubungi Saya</h1>
+                    <p class="section-subtitle">Saya selalu terbuka untuk diskusi dan kolaborasi</p>
+                </div>
+
+                <div class="social-section-top">
+                    <h3>Terhubung Dengan Saya</h3>
+                    <p class="social-desc">Temukan saya di platform berikut:</p>
+                    <div class="social-grid-top">
+                        <a href="https://github.com/RafihaikalP/2411532002_Tugas_Desain_web" class="social-card" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-card" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/rafihaikal05?igsh=aXFrYWxoZHJiOWls" class="social-card" title="Instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-card" title="WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Kirim Pesan Langsung</h2>
+                        <p>Ada pertanyaan atau proyek yang ingin didiskusikan? Isi formulir di bawah ini.</p>
+                    </div>
+
+                    <form class="modern-form">
+                        
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Nama Lengkap
+                                 </label>
+                                <input type="text" id="name" name="name" required placeholder="Nama Anda">
+                            </div>
+                            
+                            <div class="form-field">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="Email Anda">
+                            </div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="category">
+                                <i class="fas fa-tag"></i>
+                                Kategori Pesan
+                            </label>
+                            <select id="category" name="kategori" required>
+                                <option value="" disabled selected>Pilih Kategori</option>
+                                <option value="Pertanyaan">Pertanyaan</option>
+                                <option value="Saran">Saran</option>
+                                <option value="Masalah">Masalah</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="message">
+                                <i class="fas fa-comment-dots"></i>
+                                Pesan
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Kirim</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 RAFI HAIKAL PRATAMA. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+
+        const contactForm = document.querySelector('.modern-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const category = document.getElementById('category').value;
+                const message = document.getElementById('message').value;
+                const subject = encodeURIComponent(`Pesan dari Portofolio - ${name}`);
+                const body = encodeURIComponent(
+                    `Kategori: ${category}\n` +
+                    `Dari: ${name} (${email})\n\n` +
+                    `Isi Pesan:\n${message}`
+                );
+                const mailtoUrl = `mailto:rafidoang299@gmail.com?subject=${subject}&body=${body}`;
+                window.location.href = mailtoUrl;
+            });
+        }
+    </script>
+</body>
+</html>
+

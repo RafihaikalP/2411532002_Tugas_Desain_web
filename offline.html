@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a3d2a">
+    <title>Offline | RAFI HAIKAL PRATAMA</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="rafilogo-192x192.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a3d2a 0%, #12543d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f9fafb;
+            padding: 2rem;
+        }
+
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .offline-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: rgba(61, 217, 184, 0.1);
+            border: 3px solid #3dd9b8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+        }
+
+        .offline-icon svg {
+            width: 60px;
+            height: 60px;
+            fill: #3dd9b8;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #f9fafb;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #b0e6db;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .retry-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3dd9b8, #a8e63d);
+            color: #0a3d2a;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .retry-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(61, 217, 184, 0.4);
+        }
+
+        .cached-pages {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(61, 217, 184, 0.2);
+        }
+
+        .cached-pages h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #b0e6db;
+        }
+
+        .page-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .page-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: rgba(61, 217, 184, 0.1);
+            border: 1px solid #2a7e67;
+            border-radius: 10px;
+            color: #3dd9b8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .page-link:hover {
+            background: rgba(61, 217, 184, 0.2);
+            border-color: #3dd9b8;
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .offline-icon {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/>
+                <line x1="1" y1="1" x2="23" y2="23" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </div>
+        
+        <h1>Anda Sedang Offline</h1>
+        <p>Tidak ada koneksi internet.</p>
+        
+        <button class="retry-btn" onclick="window.location.reload()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+            <span>Coba Lagi</span>
+        </button>
+    </div>
+</body>
+</html>

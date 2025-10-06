@@ -1,0 +1,28 @@
+{
+  "name": "Portfolio Rafi Haikal Pratama",
+  "short_name": "Portfolio RHP",
+  "description": "Portfolio website Rafi Haikal Pratama - 2411532002",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a3d2a",
+  "theme_color": "#0a3d2a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "rafilogo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "rafilogo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "web development"],
+  "lang": "id-ID",
+  "dir": "ltr",
+  "scope": "/"
+}

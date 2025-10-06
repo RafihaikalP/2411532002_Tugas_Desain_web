@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentang Saya">
+    <meta name="theme-color" content="#0a3d2a">
+    <title>Tentang Saya | RAFI HAIKAL PRATAMA</title>
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="rafilogo-192x192.png">
+    <link rel="apple-touch-icon" href="rafilogo-512x512.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="particles-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon">Porto</span>
+                    <span class="logo-text">Folio</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="about.html" class="nav-link active">
+                        <i class="fas fa-user"></i>
+                        <span>Tentang</span>
+                    </a></li>
+                    <li><a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kontak</span>
+                    </a></li>
+                    <li id="installNavItem" style="display: none;">
+                        <button id="installButton" class="nav-install-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Install</span>
+                        </button>
+                    </li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-glow"></div>
+                            <img src="rafilogo.png" alt="Rafi Haikal Pratama" class="profile-img">
+                            <div class="profile-status">
+                                <span class="status-dot"></span>
+                                <span>Programmer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <div class="section-badge">Profile</div>
+                        <h1 class="about-title">RAFI HAIKAL PRATAMA</h1>
+                        <p class="about-role">
+                            <i class="fas fa-terminal"></i>
+                            Programmer | Web Developer
+                        </p>
+                        <div class="about-description">
+                            <p>
+                                Saya sedang mengubah website sederhana menjadi sebuah <strong>Progressive Web App (PWA)</strong> sebagai bagian dari 
+                                penerapan konsep pengembangan web modern. PWA memungkinkan aplikasi web untuk diakses secara cepat dan responsif.
+                            </p>
+                            <p>
+                                Proyek ini bertujuan untuk memperkuat pemahaman mengenai implementasi 
+                                <em>service worker</em>, <em>web app manifest</em>, serta fitur instalasi aplikasi berbasis web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 RAFI HAIKAL PRATAMA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
+
